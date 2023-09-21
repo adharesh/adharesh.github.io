@@ -47,15 +47,26 @@ h1 {
 }
 
 .box {
-  width: 300px;
-  margin: 50px auto;
-  background: #00bfb6;
-  padding: 20px;
+  border-radius: 15px;
+  background: #c2bbf0;
+  color: #3A1772;
+  padding: 50px;
   text-align: center;
   font-weight: 900;
-  color: #fff;
-  font-family: arial, serif;
+  font-family: Georgia, sans-serif;
   position: relative;
+}
+
+.left {
+  margin: 200px;
+  margin-left: 10px;
+  margin-right: 200px;
+}
+
+.right {
+  margin: 200px;
+  margin-left: 200px;
+  margin-right: 10px;
 }
 
 .sb1::before {
@@ -63,12 +74,12 @@ h1 {
   width: 1px;
   height: 1px;
   position: absolute;
-  border-left: 10px solid #00bfb6;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #00bfb6;
-  border-bottom: 10px solid transparent;
-  right: -19px;
-  top: 6px;
+  border-left: 15px solid #c2bbf0;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #c2bbf0;
+  border-bottom: 15px solid transparent;
+  right: -16px;
+  top: 1px;
 }
 
 .sb2::before {
@@ -76,36 +87,16 @@ h1 {
   width: 1px;
   height: 1px;
   position: absolute;
-  border-left: 10px solid transparent;
-  border-right: 10px solid #00bfb6;
-  border-top: 10px solid #00bfb6;
-  border-bottom: 10px solid transparent;
-  left: -19px;
-  top: 6px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid #c2bbf0;
+  border-top: 15px solid #c2bbf0;
+  border-bottom: 15px solid transparent;
+  left: -16px;
+  top: 1px;
 }
 
-.sb3::before {
-  content: "";
-  width: 1px;
-  height: 1px;
-  position: absolute;
-  border-left: 10px solid #00bfb6;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #00bfb6;
-  border-bottom: 10px solid transparent;
-  left: 19px;
-  bottom: -19px;
-}
 
-.sb4::before {
-  content: "";
-  width: 1px;
-  height: 1px;
-  position: absolute;
-  border-left: 10px solid transparent;
-  border-right: 10px solid #00bfb6;
-  border-top: 10px solid #00bfb6;
-  border-bottom: 10px solid transparent;
-  right: 19px;
-  bottom: -19px;
-}
+
+
+
+
