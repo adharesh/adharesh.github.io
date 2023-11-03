@@ -12,13 +12,6 @@ h1 {
   text-align: center;
 }
 
-.container {
-  display: grid;
-  align-items: center; 
-  grid-template-columns: 1fr 6fr;
-  column-gap: 5px;
- }
-
 .sidenav {
   height: 100%;
   width: 160px;
@@ -54,24 +47,12 @@ h1 {
 }
 
 .box {
-  border-radius: 25px;
+  border-radius: 15px;
   background: #c2bbf0;
   color: #3A1772;
   padding: 50px;
   text-align: center;
-  font-weight: 100;
-  font-family: Georgia, sans-serif;
-  position: relative;
-}
-
-.box-transparent {
-  border: 5px solid #3A1772;
-  border-radius: 25px;
-  background: #fff;
-  color: #3A1772;
-  padding: 50px;
-  text-align: center;
-  font-weight: 400;
+  font-weight: 900;
   font-family: Georgia, sans-serif;
   position: relative;
 }
@@ -88,57 +69,34 @@ h1 {
   margin-right: 10px;
 }
 
-
-/* bottom right speech bubble corner */
-.sb3::before {
+.sb1::before {
   content: "";
   width: 1px;
   height: 1px;
   position: absolute;
-  border-left: 10px solid #c2bbf0;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #c2bbf0;
-  border-bottom: 10px solid transparent;
-  left: 19px;
-  bottom: -19px;
+  border-left: 15px solid #c2bbf0;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #c2bbf0;
+  border-bottom: 15px solid transparent;
+  right: -16px;
+  top: 1px;
 }
 
-/* bottom left speech bubble corner */
-.sb4::before {
+.sb2::before {
   content: "";
   width: 1px;
   height: 1px;
   position: absolute;
-  border-left: 10px solid transparent;
-  border-right: 10px solid #c2bbf0;
-  border-top: 10px solid #c2bbf0;
-  border-bottom: 10px solid transparent;
-  right: 19px;
-  bottom: -19px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid #c2bbf0;
+  border-top: 15px solid #c2bbf0;
+  border-bottom: 15px solid transparent;
+  left: -16px;
+  top: 1px;
 }
 
-.sb3-trans::before {
-  content: "";
-  width: 1px;
-  height: 1px;
-  position: absolute;
-  border-left: 10px solid #3A1772;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #3A1772;
-  border-bottom: 10px solid transparent;
-  left: 19px;
-  bottom: -21px;
-}
 
-.sb4-trans::before {
-  content: "";
-  width: 1px;
-  height: 1px;
-  position: absolute;
-  border-left: 10px solid transparent;
-  border-right: 10px solid #3A1772;
-  border-top: 10px solid #3A1772;
-  border-bottom: 10px solid transparent;
-  right: 19px;
-  bottom: -21px;
-}
+
+
+
+
