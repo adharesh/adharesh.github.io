@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+
+</head>
+<body>
+    <div class="sidenav">
+        <div>
+          <a href="index.html">HOME</a>
+          <a href="about.html">about</a>
+          <a href="projects.html">projects</a>
+          <a href="work.html">work</a>
+          <a href="art(i).html" style="font-weight:bold; color:#fff">art(i)</a>
+          <a href="contact.html">contact</a>
+        </div>
+      </div>
+
+      
+    <title>Image Click to Open</title>
+  
+    <div class="main">
+
+        <div class="box sb3 left"> Click a piece of art to see it close-up! Click it again to close :) </div>        
+        
+        <div class="box" style="z-index: 1; margin-left: 500px; margin-right: 500px; margin-top: 100px;">
+            <div>
+                <img src="images/art1.JPG" alt="Click to open" onclick="openImage(this)" style="height: 100px; width:100px">
+            </div>
+        
+            <div id="enlarged-image" class="enlarged-image" onclick="closeImage()" style="height: 800px; width:800px">
+                <img src="images/art1.JPG" alt="Click to close">
+            </div>
+        </div>
+
+        <div class="box" style="margin-left: 500px; margin-right: 500px; margin-top: 50px;">
+            <div>
+                <img src="images/art2.jpeg" alt="Click to open" onclick="openImage(this)" style="height: 100px; width:100px">
+            </div>
+        
+            <div id="enlarged-image" class="enlarged-image" onclick="closeImage()" style="height: 800px; width:800px">
+                <img src="images/art2.jpeg" alt="Click to close">
+            </div>
+        </div>
+
+        <div class="box" style="margin-left: 500px; margin-right: 500px; margin-top: 50px;">
+            <div>
+                <img src="images/art3.JPG" alt="Click to open" onclick="openImage(this)" style="height: 100px; width:100px">
+            </div>
+        
+            <div id="enlarged-image" class="enlarged-image" onclick="closeImage()" style="height: 800px; width:800px">
+                <img src="images/art3.JPG" alt="Click to close">
+            </div>
+        </div>
+
+        <div class="box" style="margin-left: 500px; margin-right: 500px; margin-top: 50px; margin-bottom: 100px;">
+            <div>
+                <img src="images/art4.jpg" alt="Click to open" onclick="openImage(this)" style="height: 100px; width:100px">
+            </div>
+        
+            <div id="enlarged-image" class="enlarged-image" onclick="closeImage()" style="height: 800px; width:800px">
+                <img src="images/art4.jpg" alt="Click to close">
+            </div>
+        </div>
+        
+    
+        <script>
+            function openImage(clickedImage) {
+                var enlargedImage = document.getElementById("enlarged-image");
+                var largerImage = enlargedImage.querySelector("img");
+
+                largerImage.src = clickedImage.src;
+
+                enlargedImage.style.display = "block";
+
+                // Center the enlarged image in the viewport
+                enlargedImage.style.top = "50%";
+                enlargedImage.style.left = "50%";
+                enlargedImage.style.transform = "translate(-50%, -50%)"; // Center using translate
+
+                document.body.style.overflow = "hidden"; // Prevent scrolling when the image is open
+            }
+
+            function closeImage() {
+                document.getElementById("enlarged-image").style.display = "none";
+                document.body.style.overflow = "auto"; // Re-enable scrolling
+            }
+        </script>
+
+        <!-- 
+        <div class="carousel-container">
+            <ul class="carousel-slides">
+                <li><img src="images/avatar.jpg" alt="images/avatar.jpg"></li>
+                <li><img src="images/clouds.JPG" alt="images/cloud.jpg"></li>
+                <li><img src="images/avatar.jpg" alt="Image 3"></li>
+
+            </ul>
+        </div>
+        <div class="carousel-indicators">
+            <span data-slide-index="0"></span>
+            <span data-slide-index="1"></span>
+            <span data-slide-index="2"></span>
+   
+        </div>
+        <button id="prevButton">Previous</button>
+        <button id="nextButton">Next</button>
+
+        <script src="javascripts/art(i).js"></script> -->
+    </div>
+</body>
