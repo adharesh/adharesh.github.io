@@ -1,1 +1,1 @@
-console.log("Hello from index.js!, I am arti");
+console.log("Hello from index.js!");
